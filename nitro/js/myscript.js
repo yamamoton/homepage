@@ -1,5 +1,5 @@
 $(window).load(function(){
-	$('div.im').imagefit({
+	$('div.im img').imagefit({
 	mode:'inside',
     halign : 'center',
     valign : 'middle',

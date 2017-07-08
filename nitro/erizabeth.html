@@ -51,7 +51,6 @@
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <!-- Theme style  -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/mystyle.css">
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
         <!-- FOR IE9 below -->
@@ -143,9 +142,7 @@
                         <div class="thumbnail">
                             <!-- これがないとカーソルが指にならない -->
                             <a href="#">
-                                <div class="im">
-                                    <img src="images/eri/face.jpg" value="表情集" onclick="pop(this)">
-                                </div>
+                                    <div class="im"><img src="images/eri/face.jpg" value="表情集" onclick="pop(this)"></div>
                             </a>
                         </div>
                     </div>
@@ -222,6 +219,27 @@
         document.getElementById("caption").innerHTML = $(self).attr('value');
     }
 </script>
+
+<style type="text/css">
+div.im{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100% 0 0;
+    overflow:hidden;
+}
+div.im img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin:auto;
+    width: auto;
+    height: 100%;
+
+}
+</style>
+
+
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
@@ -238,6 +256,5 @@
 <script src="js/jquery.countTo.js"></script>
 <!-- MAIN JS -->
 <script src="js/main.js"></script>
-<!-- Imagefit -->
-<script src="js/jquery.imagefit.js"></script>
+
 </body></html>
